@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Local Inquiry Diagnostics | Sheldon Tech Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="ops.js" defer></script>
+</head>
+<body>
+  <main class="wrap section">
+    <p><a href="index.html">Back to portfolio</a></p>
+    <h1>Inquiry diagnostics</h1>
+    <p>The local server reports aggregate counts for predefined sample inquiries.</p>
+    <section class="diagnostic" aria-labelledby="status-heading">
+      <h2 id="status-heading">Local API</h2>
+      <p id="health" role="status">Checking connection…</p>
+      <p><strong id="total">—</strong> saved samples</p>
+      <ul id="services-list" aria-label="Samples by service"></ul>
+      <button class="button" id="refresh" type="button">Refresh diagnostics</button>
+    </section>
+  </main>
+</body>
+</html>
