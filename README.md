@@ -1,28 +1,27 @@
 # Sheldon Tech Solutions
 
-My company. I founded Sheldon Tech Solutions to help local businesses and home users with the technology side of their work: websites, Google presence, and practical IT support, in English and French.
+Founder-led web development, local search, and IT support for small businesses. Sheldon Mbuh founded the agency in Kitchener–Waterloo and works with clients in English and French. [Business website](https://sheldontechsolutions.com/) · [Public engineering portfolio](https://sheldonmbuh.github.io/sheldon-tech-solutions/)
 
-Live site: [sheldontechsolutions.com](https://sheldontechsolutions.com)
+## Selected work
 
-## What the business does
+- [Red River Fence & Deck](https://github.com/sheldonmbuh/red-river-fencing) covers a WordPress build, local SEO, Google Business Profile, Google Ads, and the quote-request journey.
+- Akum Cleaning Solutions commissioned branding, a domain, professional email setup, and Google Business Profile work.
+- PLUS+ Construction commissioned business-profile and online-presence work.
+- Home and small-office engagements include networking, surveillance camera setup, and device support.
 
-- Website design and builds for small businesses
-- Local SEO and Google Business Profile setup and management
-- Google Ads campaign builds and management
-- Branding: logos, flyers, and business identity
-- Hands-on IT support for home users and small teams
+## Run the demo
 
-## Selected client work
+Requirements are Python 3.11 or later and a modern browser. The application uses the standard library and SQLite.
 
-- **Red River Fence & Deck** (Waterloo Region): full website build, local SEO with city pages, Google Business Profile, and Google Ads.
-- **Akum Cleaning Solutions** (Montreal): branding, domain and professional email setup, and a Google Business Profile.
-- **PLUS+ Construction**: Bark profile and online presence work.
-- **Home and small-office clients**: networking, surveillance cameras, and device setup and repair.
+```sh
+python3 -m unittest discover -s tests -v
+node --check demo.js
+node --check ops.js
+python3 server/app.py
+```
 
-## About this repository
+Open [the local portfolio](http://127.0.0.1:8765/) and choose a sample inquiry. The service count updates after the database transaction commits. [Local diagnostics](http://127.0.0.1:8765/ops.html) shows API health and aggregate counts. The database starts empty and is created at `data/samples.sqlite3`. Use `--database` to point a run at a separate file.
 
-This is the project page for the business on my GitHub. The production website lives at sheldontechsolutions.com. Client work is shown with each client's permission, and private client systems are never published here.
+The public GitHub Pages site runs an in-memory preview that clears on reload. The Python API binds to localhost and accepts only predefined sample IDs. The production business website and client systems are separate.
 
-## Contact
-
-Email: info@sheldontechsolutions.com
+[Architecture and API](docs/architecture.md)
